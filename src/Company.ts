@@ -1,6 +1,7 @@
 import { faker } from '@faker-js/faker';
+import { Mappable } from './CustomMap';
 
-export class Company {
+export class Company implements Mappable {
   companyName: string;
   companyCatchprase: string;
 
@@ -8,6 +9,7 @@ export class Company {
     lat: number;
     lng: number;
   };
+  color: string = 'blue';
   markerContent(): string {
     return `
     <div>
