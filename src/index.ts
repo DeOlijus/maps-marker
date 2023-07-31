@@ -12,10 +12,5 @@ console.log(company);
 
 const customMap = new CustomMap('map');
 
-/* bad implementation 
-customMap.addUserMarker(user);
-customMap.addCompanyMarker(company);
-*/
-
 customMap.addMarker(user);
-customMap.addMarker(company); // need to change company.companyLocation to location
+customMap.addMarker(company);
